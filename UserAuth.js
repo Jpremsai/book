@@ -28,9 +28,6 @@ export function UserContextProvider({children}){
     })
         return () => subscribe();
     },[])
-    function getBookId(){
-
-    }
     
     return <userContext.Provider value={ {user,signup,signin,logout}}>
         {children}
